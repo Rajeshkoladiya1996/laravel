@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.508" height="16.507" viewBox="0 0 16.508 16.507">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.259" y1="0.164" x2="0.789" y2="0.96" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffdc4e"/>
+      <stop offset="1" stop-color="#b98800"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_102" data-name="Group 102" transform="translate(-321 -482)">
+    <g id="youtube-social-badge" transform="translate(321 482)">
+      <g id="Group_6" data-name="Group 6" transform="translate(0 0)">
+        <path id="Path_275" data-name="Path 275" d="M16.185,7.175,14.843,5.388l-.4-2.2a1.6,1.6,0,0,0-1.355-1.3l-2.212-.314L9.039.3a1.606,1.606,0,0,0-1.88.037L5.373,1.68l-2.2.4a1.606,1.606,0,0,0-1.3,1.355L1.558,5.647.286,7.484a1.6,1.6,0,0,0,.036,1.88l1.342,1.786.4,2.2a1.6,1.6,0,0,0,1.355,1.3l2.212.314,1.837,1.272a1.607,1.607,0,0,0,1.88-.037l1.786-1.342,2.2-.4a1.607,1.607,0,0,0,1.3-1.355l.314-2.212,1.272-1.837A1.6,1.6,0,0,0,16.185,7.175Z" transform="translate(0 -0.014)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <path id="Path_434" data-name="Path 434" d="M3.535,0h-.8V-6.05a1.854,1.854,0,0,1-.271.212,4.417,4.417,0,0,1-.4.237q-.222.117-.469.22a3.407,3.407,0,0,1-.481.161V-6.03a4.655,4.655,0,0,0,.559-.2q.3-.125.581-.278t.54-.322a4.284,4.284,0,0,0,.439-.33h.3Z" transform="translate(326.887 494.158)" fill="#111"/>
+  </g>
+</svg>

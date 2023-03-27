@@ -1,0 +1,261 @@
+:root {
+  --pink: #e40184;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  max-width: 414px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.main-avatar-wrap {
+  display: flex;
+  align-items: center;
+  background-color: #ffd8d9;
+  padding: 4px 10px;
+}
+
+.avatar-accessory-list {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-accessory-list .avatar-style-btn:last-child {
+  margin-bottom: 0;
+}
+
+.avatar-style-btn {
+  width: 65px;
+  height: 65px;
+  background-color: #fcf3ea;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s all;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.avatar-style-btn:active {
+  background-color: #e9e0d7;
+}
+
+.avatar-style-btn img {
+  width: 35px;
+  height: 35px;
+}
+
+.main-avatar {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.main-avatar img {
+  width: 100%;
+  height: inherit;
+  object-fit: contain;
+}
+
+.avatar-editor {
+  padding-bottom: 10px;
+}
+/* EDIT CATEGORY LIST */
+.avatar-edit-categories {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.avatar-editor .category-btn {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: 0.3s background-color;
+  padding: 5px;
+}
+
+.category-btn img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.category-btn.category-active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5px;
+  width: 60%;
+  height: 4px;
+  background-color: var(--pink);
+  border-radius: 5px;
+}
+
+.avatar-editor .category-btn:active {
+  background-color: rgb(231 231 231);
+}
+
+.avatar-editor .category-btn:active::before {
+  background-color: transparent;
+}
+
+.avatar-editor .category-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 50%;
+  background-color: #d5d2d2;
+}
+
+.avatar-editor .category-btn::before {
+  left: -1px;
+}
+
+.avatar-editor .category-btn:first-child:before {
+  content: unset;
+}
+/* EDIT CATEGORY LIST END */
+
+/* EDIT PANELS */
+.edit-panel {
+  display: none;
+  /* grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); */
+
+  overflow-y: auto;
+  max-height: 225px;
+  min-height: 225px;
+  padding: 10px 10px 0;
+}
+
+.edit-panel.panel-active  {
+  display: block;
+}
+.edit-panel-inner {
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 8px;
+  display: grid;
+}
+
+.edit-panel .edit-option {
+  position: relative;
+  padding-bottom: 100%;
+  border: 2px solid #d5d2d2;
+  border-radius: 10px;
+}
+
+.edit-option > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s background-color, border-color;
+  /* padding: 10px; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.edit-option.option-active {
+  border-color: var(--pink);
+}
+
+.edit-panel .edit-option:active {
+  background-color: rgb(231 231 231);
+}
+
+.edit-option .option-content {
+  flex-shrink: 0;
+}
+
+.edit-option .salmon-number {
+  display: flex;
+  align-items: center;
+  color: var(--pink);
+  font-weight: 600;
+}
+
+.salmon-img {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+.salmon-img img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.salmon-count {
+  font-size: 14px;
+}
+
+.option-content {
+  width: 50px;
+  height: 50px;
+}
+
+.option-content img {
+  width: 100%;
+  height: inherit;
+  object-fit: contain;
+  object-position: center;
+}
+/* EDIT PANELS END */

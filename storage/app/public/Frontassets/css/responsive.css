@@ -1,0 +1,83 @@
+/**
+* [Table of contents]
+  1 1290px css
+  2 1440px css
+  3 1630px css
+  4 1599px css
+  5 1429px css
+  6 1199px css
+  7 991px css
+  8 767px css
+  9 575px css
+  10 480px css
+  11 350px css
+**/
+
+/* 1290px css */
+@media only screen and (min-width: 1430px) {
+  .container {
+    max-width: 1290px;
+  }
+}
+
+/* 1440px css */
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* 1630px css */
+@media only screen and (min-width: 1800px) {
+  .container {
+    max-width: 1630px;
+  }
+}
+
+/* 1599px css */
+@media only screen and (max-width: 1599px) {
+  html {
+    font-size: 8px; 
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+/* 1429px css */
+@media only screen and (max-width: 1429px) {
+  html {
+    font-size: 7px; 
+  }
+  
+}
+
+/* 1199px css */
+@media only screen and (max-width: 1199px) {
+  
+}
+
+/* 991px css */
+@media only screen and (max-width: 991px) {
+  
+}
+
+/* 767px css */
+@media only screen and (max-width: 767px) {
+  
+}
+
+/* 575px css */
+@media only screen and (max-width: 575px) {
+  
+}
+
+/* 480px css */
+@media only screen and (max-width: 480px) {
+  
+}
+
+/* 350px css */
+@media only screen and (max-width: 350px) {
+  
+}
