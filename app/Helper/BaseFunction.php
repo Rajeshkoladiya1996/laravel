@@ -132,7 +132,7 @@ class BaseFunction {
           CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
          
           CURLOPT_HTTPHEADER => array(
-             'Authorization: Basic NDRkZTNmYTA1OTNjNGViNjk0YWVhYzFiM2FhNGQxZDI6NzdhNGU2YmNkMDYyNDZiNWI1ODgyMGU2YjI2YTc2NDg=',
+             'Authorization: Basic ',
             'Content-Type: application/json'
           ),
           CURLOPT_CUSTOMREQUEST => "GET"          
@@ -163,7 +163,7 @@ class BaseFunction {
           CURLOPT_TIMEOUT => 30,
           CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
           CURLOPT_HTTPHEADER => array(
-             'Authorization: Basic NDRkZTNmYTA1OTNjNGViNjk0YWVhYzFiM2FhNGQxZDI6NzdhNGU2YmNkMDYyNDZiNWI1ODgyMGU2YjI2YTc2NDg=',
+             'Authorization: Basic =',
             'Content-Type: application/json'
           ),
           CURLOPT_CUSTOMREQUEST => "GET"          
@@ -183,7 +183,7 @@ class BaseFunction {
     }
     public static function sendNotification($user,$title,$body){
 
-        $serverkey = 'AAAAkd8gF4s:APA91bF2ZSaZ9IiefryIS1LrR9nguuGXYxZQ87D2VDNkXVHYbZVSGf7yPJqy6682PCOoPrlr1_qgrXd51OkxIHwaYnGoeWVOxJ_RxQyPBjSx047q1yVcabrhZg2AcOTnhW0hue_o8l_k';
+        $serverkey = 'AAAAkd8gF4s:';
 
         define( 'API_ACCESS_KEY' ,$serverkey);
 
